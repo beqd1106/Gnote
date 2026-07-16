@@ -1,0 +1,326 @@
+[
+  {
+    "id": "qd-dla-01",
+    "question": "画像認識モデルVision Transformer(ViT)の特徴として正しいものはどれか。",
+    "choices": [
+      "GANのように生成器と識別器を競わせて学習する",
+      "画像を格子状のグリッドに分割し、各セルが直接クラスを予測する",
+      "画像を固定サイズのパッチに分割してトークン列とみなし、Transformerの自己注意機構で処理する",
+      "音声波形を1サンプルずつ直接生成する"
+    ],
+    "correctAnswers": [2],
+    "explanation": "Vision Transformer(ViT)は、画像を小さなパッチに分割してトークンの列として扱い、Transformerの自己注意機構によって画像認識を行うモデルである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "画像認識",
+    "difficulty": 2,
+    "tags": ["ドリル", "Vision Transformer"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-02",
+    "question": "物体検出タスクにおいて「バウンディングボックス」は主に何のために用いられるか。",
+    "choices": [
+      "画像をピクセル単位で意味のある領域に塗り分けるため",
+      "文章を単語ごとに分割し品詞を判定するため",
+      "モデルのパラメータ数を削減し軽量化するため",
+      "画像内で検出した物体のおおよその位置と大きさを矩形で示すため"
+    ],
+    "correctAnswers": [3],
+    "explanation": "バウンディングボックスは、物体検出において検出された物体を囲む矩形で、その物体のおおよその位置と大きさを表すために用いられる。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "物体検出",
+    "difficulty": 1,
+    "tags": ["ドリル", "バウンディングボックス"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-03",
+    "question": "候補領域の提案とクラス分類を1回のネットワーク処理でまとめて行い高速に検出する方式を【　】と呼ぶ。",
+    "choices": [
+      "2段階検出",
+      "1段階検出",
+      "アンサンブル学習",
+      "転移学習"
+    ],
+    "correctAnswers": [1],
+    "explanation": "候補領域の提案とクラス分類を1回の処理で同時に行い高速化を図る方式は1段階検出(One-stage detection)と呼ばれ、YOLOやSSDなどが代表例である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "物体検出",
+    "difficulty": 1,
+    "tags": ["ドリル", "1段階検出"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-04",
+    "question": "「画像中に写っている複数の犬をピクセル単位で領域分けしつつ、1匹ずつ別々の個体として区別したい」という要件に最も適したタスクはどれか。",
+    "choices": [
+      "画像分類",
+      "セマンティックセグメンテーション",
+      "インスタンスセグメンテーション",
+      "回帰分析"
+    ],
+    "correctAnswers": [2],
+    "explanation": "同じクラスの物体でも個体ごとに領域を区別して分割するタスクはインスタンスセグメンテーションであり、個体を区別しないセマンティックセグメンテーションとは異なる。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "セグメンテーション",
+    "difficulty": 2,
+    "tags": ["ドリル", "インスタンスセグメンテーション"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-05",
+    "question": "Mask R-CNNの説明として正しいものはどれか。",
+    "choices": [
+      "画像を入力せず音声のみからテキストを生成するモデルである",
+      "生成器と識別器を競わせて画像を生成するモデルである",
+      "Faster R-CNNに、各検出領域のピクセル単位マスクを予測する分岐を追加し、物体検出とインスタンスセグメンテーションを同時に行うモデルである",
+      "文中の一部の単語をマスクし前後の文脈から予測するモデルである"
+    ],
+    "correctAnswers": [2],
+    "explanation": "Mask R-CNNは、物体検出手法のFaster R-CNNをベースに、検出した各領域についてピクセル単位のマスクを予測する分岐を追加することで、物体検出とインスタンスセグメンテーションを同時に行えるようにしたモデルである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "セグメンテーション",
+    "difficulty": 1,
+    "tags": ["ドリル", "Mask R-CNN"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-06",
+    "question": "OpenPoseの説明として最も適切なものはどれか。",
+    "choices": [
+      "画像や映像から人物の関節などのキーポイントを検出し、姿勢を推定する技術である",
+      "文章を単語ごとに分割し品詞を判定する自然言語処理の手法である",
+      "音声波形からテキストを生成する音声認識モデルである",
+      "候補領域を提案してから物体クラスを分類する物体検出モデルである"
+    ],
+    "correctAnswers": [0],
+    "explanation": "OpenPoseは、画像や動画に写る人物の関節などのキーポイントを検出することで、人物の姿勢を推定する技術(姿勢推定)の代表例である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "姿勢推定",
+    "difficulty": 1,
+    "tags": ["ドリル", "OpenPose"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-07",
+    "question": "自然言語処理における「形態素解析」は主に何のために行われるか。",
+    "choices": [
+      "画像を小さなパッチに分割しトークン列として扱うため",
+      "モデルの重みのビット数を減らして軽量化するため",
+      "生成器と識別器を敵対的に学習させるため",
+      "文を意味を持つ最小単位(形態素)に分割し、品詞などを判定するため"
+    ],
+    "correctAnswers": [3],
+    "explanation": "形態素解析は、文章を意味を持つ最小単位である形態素に分割し、それぞれの品詞などを判定する処理であり、単語の区切りが明確でない日本語などの自然言語処理における前処理として広く用いられる。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "自然言語処理",
+    "difficulty": 1,
+    "tags": ["ドリル", "形態素解析"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-08",
+    "question": "ある単語が文書内でどれだけ多く出現するかと、他の多くの文書にはあまり出現しない珍しい単語かどうかを組み合わせて単語の重要度を評価する手法を【　】という。",
+    "choices": [
+      "TF-IDF",
+      "word2vec",
+      "BERT",
+      "Attention"
+    ],
+    "correctAnswers": [0],
+    "explanation": "TF-IDF(Term Frequency-Inverse Document Frequency)は、文書内での単語の出現頻度(TF)と、その単語が他の文書には珍しいかどうかを表す逆文書頻度(IDF)を組み合わせて、単語の重要度を評価する手法である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "自然言語処理",
+    "difficulty": 1,
+    "tags": ["ドリル", "TF-IDF"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-09",
+    "question": "「大量の文書について、単語の並び順は無視し、各単語が何回出現したかだけをベクトルとして数値化したい」という場合に該当する手法はどれか。",
+    "choices": [
+      "seq2seq",
+      "GAN",
+      "Bag-of-Words(BoW)",
+      "Grad-CAM"
+    ],
+    "correctAnswers": [2],
+    "explanation": "Bag-of-Words(BoW)は、文中の単語の並び順を考慮せず、各単語の出現回数(頻度)だけを要素としてベクトル化する、古典的な文書のベクトル表現手法である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "自然言語処理",
+    "difficulty": 1,
+    "tags": ["ドリル", "BoW"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-10",
+    "question": "単語埋め込み手法fastTextの特徴として正しいものはどれか。",
+    "choices": [
+      "文中の単語をマスクし前後双方向の文脈から予測することで埋め込みを学習する",
+      "単語をさらに部分文字列(サブワード)に分解して学習することで、未知語や表記ゆれにもある程度対応できる",
+      "画像とテキストのペアを対照学習し、共通の埋め込み空間を学習する",
+      "モンテカルロ木探索と組み合わせて盤面を評価する"
+    ],
+    "correctAnswers": [1],
+    "explanation": "fastTextは、単語をそのまま扱うのではなく、単語をさらに細かい部分文字列(サブワード、文字n-gram)に分解して学習することで、学習データに現れなかった未知語や表記ゆれのある単語に対してもある程度対応できる単語埋め込み手法である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "自然言語処理",
+    "difficulty": 2,
+    "tags": ["ドリル", "fastText"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-11",
+    "question": "音声認識・音声合成に関する説明として誤っているものはどれか。",
+    "choices": [
+      "音声認識は、入力された音声波形をテキストに変換する技術である",
+      "音声合成は、テキストなどをもとに音声波形を生成する技術である",
+      "WaveNetは、深層学習を用いた音声合成モデルの一例である",
+      "音声認識と音声合成はまったく同じ処理を指す同義語であり、区別する必要はない"
+    ],
+    "correctAnswers": [3],
+    "explanation": "音声認識は音声からテキストへの変換、音声合成はテキストなどから音声を生成する処理であり、両者は入出力が逆の異なる技術であるため、同義語として扱うのは誤りである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "音声処理",
+    "difficulty": 1,
+    "tags": ["ドリル", "音声認識・音声合成"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-12",
+    "question": "深層強化学習における「sim2real」の取り組みは主に何を目的として行われるか。",
+    "choices": [
+      "文中の単語をマスクして前後の文脈から予測できるようにするため",
+      "シミュレーション環境で学習した方策やモデルを、実世界のロボットなどの実環境でも活用できるようにするため",
+      "2つのネットワークを敵対的に競わせて画像を生成できるようにするため",
+      "モデルの重みのビット数を減らして計算量を削減するため"
+    ],
+    "correctAnswers": [1],
+    "explanation": "sim2real(シミュレーションから実環境への転移)は、コストや安全性の観点から実機での試行が難しい強化学習を、まずシミュレーション環境で行い、そこで学習した方策やモデルを実世界のロボットなどの実環境に適用できるようにすることを目的とした取り組みである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "深層強化学習",
+    "difficulty": 1,
+    "tags": ["ドリル", "sim2real"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-13",
+    "question": "オリジナルのAlphaGoとは異なり、人間の棋譜データを一切使わず、自己対戦のみによる強化学習で学習した囲碁AIは【　】である。",
+    "choices": [
+      "AlphaGo Zero",
+      "AlphaGo",
+      "DQN",
+      "A3C"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AlphaGo Zeroは、人間のプロ棋士の棋譜データを一切用いず、ルールのみを与えられた状態から自己対戦を繰り返す強化学習のみで学習し、従来のAlphaGoを上回る強さを達成した囲碁AIである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "深層強化学習",
+    "difficulty": 2,
+    "tags": ["ドリル", "AlphaGo Zero"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-14",
+    "question": "VAE(Variational Autoencoder、変分オートエンコーダ)の特徴として正しいものはどれか。",
+    "choices": [
+      "生成器と識別器を敵対的に競わせることでデータを生成する",
+      "画像をパッチに分割しTransformerの自己注意機構のみで処理する",
+      "候補領域を提案してから分類器でクラスを判定する",
+      "エンコーダで入力データを潜在空間上の確率分布として表現し、デコーダでその分布からサンプリングした値をもとにデータを復元・生成する"
+    ],
+    "correctAnswers": [3],
+    "explanation": "VAE(変分オートエンコーダ)は、エンコーダが入力データを潜在空間上のある確率分布(平均・分散など)として表現し、デコーダがその分布からサンプリングした潜在変数をもとに元のデータに近いものを復元・生成するモデルである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "生成モデル",
+    "difficulty": 2,
+    "tags": ["ドリル", "VAE"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-15",
+    "question": "「ペアになっていない馬の画像群とシマウマの画像群だけを使って、馬の画像をシマウマ風の見た目に変換するモデルを作りたい」という場合に適した手法はどれか。",
+    "choices": [
+      "CycleGAN",
+      "Pix2Pix",
+      "BERT",
+      "U-Net"
+    ],
+    "correctAnswers": [0],
+    "explanation": "CycleGANは、対応関係のあるペア画像を用意しなくても、2つのドメインの画像群だけから相互変換を学習できる画像変換手法であり、馬とシマウマのような対になっていない画像同士の変換例で知られる。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "生成モデル",
+    "difficulty": 2,
+    "tags": ["ドリル", "CycleGAN"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-16",
+    "question": "OpenAIが開発したDALL-Eは主に何のために使われるモデルか。",
+    "choices": [
+      "音声波形からテキストを生成するため",
+      "テキストの説明文をもとに、それに対応する画像を生成するため",
+      "画像内の物体の位置をバウンディングボックスで検出するため",
+      "モデルのパラメータ数を削減し軽量化するため"
+    ],
+    "correctAnswers": [1],
+    "explanation": "DALL-Eは、テキストによる説明文(プロンプト)を入力すると、その内容に対応する画像を生成するテキストから画像への生成モデルである。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "マルチモーダル",
+    "difficulty": 1,
+    "tags": ["ドリル", "DALL-E"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-17",
+    "question": "説明可能AIの手法SHAPは、協力ゲーム理論における【　】値の考え方をもとに、各特徴量の予測への寄与度を算出する。",
+    "choices": [
+      "固有",
+      "シャープレイ",
+      "ラグランジュ",
+      "エントロピー"
+    ],
+    "correctAnswers": [1],
+    "explanation": "SHAP(SHapley Additive exPlanations)は、協力ゲーム理論におけるシャープレイ値の考え方を応用し、各特徴量が予測結果にどの程度公平に寄与しているかを算出する説明可能AIの手法である。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "XAI",
+    "difficulty": 2,
+    "tags": ["ドリル", "SHAP"],
+    "beginnerNote": null
+  },
+  {
+    "id": "qd-dla-18",
+    "question": "敵対的サンプル(Adversarial Examples)に関する説明として誤っているものはどれか。",
+    "choices": [
+      "人間にはほとんど気づかれない微小なノイズを入力に加えることで、モデルに誤った予測をさせるデータである",
+      "自動運転の標識認識など、安全性が重視されるシステムへの脅威として研究されている",
+      "敵対的サンプルを用いてモデルを頑健にする敵対的訓練(adversarial training)などの対策が研究されている",
+      "敵対的サンプルは、モデルの学習を高速化するために標準的に用いられる通常の訓練データである"
+    ],
+    "correctAnswers": [3],
+    "explanation": "敵対的サンプルは、人間には知覚しにくい微小な摂動を加えることでモデルの誤分類を誘発する、モデルの安全性を脅かすデータであり、学習を高速化するための通常の訓練データではない。",
+    "wrongChoiceExplanations": {},
+    "domain": "dlApp",
+    "service": "敵対的サンプル",
+    "difficulty": 1,
+    "tags": ["ドリル", "敵対的サンプル"],
+    "beginnerNote": null
+  }
+]
