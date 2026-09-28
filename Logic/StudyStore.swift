@@ -40,28 +40,31 @@ final class StudyStore: ObservableObject {
     // MARK: - 回答記録
 
     /// 演習/模試で1問回答したときに呼ぶ。履歴・復習キュー・学習ログを更新する。
-    func recordAnswer(question: QuizQuestion, correct: Bool, isMock: Bool = false) {
+    /// - Parameter usedHint: ヒントを使って答えたか。使った場合は正解でも復習リストから卒業させない。
+    func recordAnswer(question: QuizQuestion, correct: Bool, isMock: Bool = false,
+                      usedHint: Bool = false) {
         context.insert(AnswerRecord(questionId: question.id, domain: question.domain,
                                     isCorrect: correct, isMockExam: isMock))
 
         // 復習キューの更新（模試以外）
         if !isMock {
-            updateReviewItem(questionId: question.id, correct: correct)
+            updateReviewItem(questionId: question.id, correct: correct, usedHint: usedHint)
         }
 
         logStudy(questions: 1, minutes: 0)
         bumpAndSave()
     }
 
-    private func updateReviewItem(questionId: String, correct: Bool) {
+    private func updateReviewItem(questionId: String, correct: Bool, usedHint: Bool = false) {
         let existing = fetchReviewItem(questionId)
         if let item = existing {
-            let r = SpacedRepetition.next(currentLevel: item.reviewLevel, correct: correct)
+            let r = SpacedRepetition.next(currentLevel: item.reviewLevel,
+                                          correct: correct, usedHint: usedHint)
             item.reviewLevel = r.level
             item.nextReviewDate = r.nextDate
             item.lastResultCorrect = correct
-            // 正解を重ねて最終段階に達したら卒業（削除）
-            if correct && item.reviewLevel >= SpacedRepetition.intervals.count - 1 {
+            // 自力の正解を重ねて最終段階に達したら卒業（削除）。ヒントつきの正解では卒業させない。
+            if correct && !usedHint && item.reviewLevel >= SpacedRepetition.intervals.count - 1 {
                 context.delete(item)
             }
         } else if !correct {
@@ -189,6 +192,66 @@ final class StudyStore: ObservableObject {
         return Set(((try? context.fetch(d)) ?? []).map(\.questionId))
     }
 
+    // MARK: - 学習データの整理
+
+    /// いま出題される問題に存在しない問題IDを参照している記録の件数。
+    /// アプリ更新で問題が入れ替わると、旧IDを指したままの履歴・復習予定・ブックマークが残るため、
+    /// それだけを選んで片付けられるようにする。
+    func staleRecordCount() -> Int {
+        let valid = validQuestionIds
+        return staleAnswers(valid).count + staleReviews(valid).count + staleMetas(valid).count
+    }
+
+    /// 旧問題を参照している記録だけを削除し、削除件数を返す。
+    /// いま出題される問題に対する成績・復習予定はそのまま残る。
+    @discardableResult
+    func deleteStaleRecords() -> Int {
+        let valid = validQuestionIds
+        var removed = 0
+        for r in staleAnswers(valid) { context.delete(r); removed += 1 }
+        for r in staleReviews(valid) { context.delete(r); removed += 1 }
+        for r in staleMetas(valid)   { context.delete(r); removed += 1 }
+        bumpAndSave()
+        return removed
+    }
+
+    private var validQuestionIds: Set<String> { Set(repo.questions.map(\.id)) }
+
+    private func staleAnswers(_ valid: Set<String>) -> [AnswerRecord] {
+        ((try? context.fetch(FetchDescriptor<AnswerRecord>())) ?? [])
+            .filter { !valid.contains($0.questionId) }
+    }
+
+    private func staleReviews(_ valid: Set<String>) -> [ReviewItem] {
+        ((try? context.fetch(FetchDescriptor<ReviewItem>())) ?? [])
+            .filter { !valid.contains($0.questionId) }
+    }
+
+    /// ブックマークやメモが付いていないものは消しても失うものが無いが、
+    /// 旧問題のメモは開く手段が無いため、まとめて片付ける対象に含める。
+    private func staleMetas(_ valid: Set<String>) -> [QuestionMeta] {
+        ((try? context.fetch(FetchDescriptor<QuestionMeta>())) ?? [])
+            .filter { !valid.contains($0.questionId) }
+    }
+
+    /// すべて初期化して初回診断へ戻す。
+    func resetAll() {
+        try? context.delete(model: UserProfile.self)
+        try? context.delete(model: QuestionMeta.self)
+        resetProgressKeepingProfile()      // 履歴系はこちらでまとめて削除
+    }
+
+    /// 学習の記録だけを消す。プロフィール・学習プランと、
+    /// 自分で付けたブックマーク／メモ（QuestionMeta）は残す。
+    func resetProgressKeepingProfile() {
+        try? context.delete(model: AnswerRecord.self)
+        try? context.delete(model: ReviewItem.self)
+        try? context.delete(model: MockExamResult.self)
+        try? context.delete(model: StudyDayLog.self)
+        try? context.delete(model: LessonProgress.self)
+        bumpAndSave()
+    }
+
     // MARK: - 統計
 
     private var allAnswers: [AnswerRecord] {
@@ -197,10 +260,16 @@ final class StudyStore: ObservableObject {
 
     var totalAnswered: Int { allAnswers.count }
 
-    /// 分野別の正答率（直近の理解度を反映するため全履歴ベース）
+    /// 本試験の実力を測る対象の回答（レッスン用のやさしい基礎問題は除く）。
+    /// 基礎問題の正解まで数えると正答率・合格可能性が実力より高く出てしまうため。
+    private var examAnswers: [AnswerRecord] {
+        allAnswers.filter { repo.question(id: $0.questionId)?.tags.contains("基礎") != true }
+    }
+
+    /// 分野別の正答率（直近の理解度を反映するため全履歴ベース。基礎問題は除く）
     func correctRateByDomain() -> [ExamDomain: Double] {
         var result: [ExamDomain: Double] = [:]
-        let answers = allAnswers
+        let answers = examAnswers
         for domain in ExamDomain.allCases {
             let inDomain = answers.filter { $0.domain == domain }
             if inDomain.isEmpty { result[domain] = 0; continue }
@@ -211,7 +280,7 @@ final class StudyStore: ObservableObject {
     }
 
     func answeredCount(in domain: ExamDomain) -> Int {
-        allAnswers.filter { $0.domain == domain }.count
+        examAnswers.filter { $0.domain == domain }.count
     }
 
     /// 最も苦手な分野（回答実績があるもののうち正答率が最低）

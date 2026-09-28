@@ -34,7 +34,7 @@ final class ContentRepository {
         var kwByDomain: [ExamDomain: [(lesson: Lesson, keywords: Set<String>)]] = [:]
         for lesson in lessons {
             var kw = Set<String>()
-            for qid in lesson.quizIds {
+            for qid in (lesson.basicQuizIds ?? []) + lesson.quizIds {
                 qToLesson[qid] = lesson
                 if let q = byId[qid] {
                     kw.insert(Self.normKeyword(q.service))
@@ -75,8 +75,9 @@ final class ContentRepository {
 
     /// 模試に使う代表的な問題プール。反復ドリル（基礎固め・変種が多い）は本番の難易度感から
     /// 外れるため除外し、基本問題・中級問題・オリジナル問題で本番に近い構成にする。
+    /// レッスン用のやさしい基礎問題も同じ理由で除外する。
     var examPool: [QuizQuestion] {
-        questions.filter { !$0.tags.contains("ドリル") }
+        questions.filter { !$0.tags.contains("ドリル") && !$0.tags.contains("基礎") }
     }
 
     func examPool(in domain: ExamDomain) -> [QuizQuestion] {
