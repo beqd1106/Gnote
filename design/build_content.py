@@ -10,6 +10,14 @@ JDLA公式シラバス2024（design/syllabus_gkentei_2024.txt）に紐づけて
 - domain rawValue は ExamDomain と一致：hist / ml / dlBasic / dlTech / dlApp / impl / law
 - 問題は design/batch_*.json、用語は terms_extra*.json、用語集は glossary_source*.json、
   反復ドリルは drill_*.json から取り込む。レッスンの quizIds/drillQuizIds は分野で自動割当。
+
+注意（v1.1.0〜）：このスクリプトは Resources を作り直すので、実行後に必ず次の順で再反映する。
+  python design/apply_polish.py design/polish --apply     # 選択肢の長さ・解説の手直し
+  python design/apply_polish.py design/balance --apply    # 正解が最長にならない逆の癖の是正
+  python design/add_basic_questions.py design/basic --apply  # 各レッスンの基礎問題10問
+  python design/validate_resources.py
+ただし正解位置の並べ替え（balance_positions）で choices の順が変わると手直しと食い違うため、
+再実行する場合は手直し前後で各問の choices 順が一致しているかを先に確かめること。
 """
 import json, os, glob, random
 from collections import Counter
