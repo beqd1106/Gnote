@@ -34,15 +34,15 @@
    "q-hist-012",
    "q-hist-013",
    "q-hist-014",
-   "q-hist-015",
+   "q-hist-015"
+  ],
+  "challengeQuizIds": null,
+  "drillQuizIds": [
    "q-hist-101",
    "q-hist-102",
    "q-hist-103",
    "q-hist-104",
-   "q-hist-105"
-  ],
-  "challengeQuizIds": null,
-  "drillQuizIds": [
+   "q-hist-105",
    "qd-hist-01",
    "qd-hist-02",
    "qd-hist-03",
@@ -62,7 +62,12 @@
    "b-hist1-07",
    "b-hist1-08",
    "b-hist1-09",
-   "b-hist1-10"
+   "b-hist1-10",
+   "b-hist1-11",
+   "b-hist1-12",
+   "b-hist1-13",
+   "b-hist1-14",
+   "b-hist1-15"
   ]
  },
  {
@@ -100,11 +105,11 @@
    "q-hist-106",
    "q-hist-107",
    "q-hist-108",
-   "q-hist-109",
-   "q-hist-110"
+   "q-hist-109"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-hist-110",
    "qd-hist-11"
   ],
   "basicQuizIds": [
@@ -117,7 +122,12 @@
    "b-hist2-07",
    "b-hist2-08",
    "b-hist2-09",
-   "b-hist2-10"
+   "b-hist2-10",
+   "b-hist2-11",
+   "b-hist2-12",
+   "b-hist2-13",
+   "b-hist2-14",
+   "b-hist2-15"
   ]
  },
  {
@@ -146,16 +156,19 @@
    "q-hist-111",
    "q-hist-112",
    "q-hist-113",
-   "q-hist-114"
+   "q-hist-114",
+   "qd-hist-14",
+   "qd-hist-13",
+   "qd-hist-10",
+   "qd-hist-09",
+   "qd-hist-12",
+   "qc-hist3-01",
+   "qc-hist3-02",
+   "qc-hist3-03",
+   "qc-hist3-04"
   ],
   "challengeQuizIds": null,
-  "drillQuizIds": [
-   "qd-hist-09",
-   "qd-hist-10",
-   "qd-hist-12",
-   "qd-hist-13",
-   "qd-hist-14"
-  ],
+  "drillQuizIds": [],
   "basicQuizIds": [
    "b-hist3-01",
    "b-hist3-02",
@@ -166,7 +179,12 @@
    "b-hist3-07",
    "b-hist3-08",
    "b-hist3-09",
-   "b-hist3-10"
+   "b-hist3-10",
+   "b-hist3-11",
+   "b-hist3-12",
+   "b-hist3-13",
+   "b-hist3-14",
+   "b-hist3-15"
   ]
  },
  {
@@ -204,11 +222,11 @@
    "q-ml-102",
    "q-ml-103",
    "q-ml-104",
-   "q-ml-105",
-   "q-ml-106"
+   "q-ml-105"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-ml-106",
    "qd-ml-01",
    "qd-ml-02",
    "qd-ml-14",
@@ -225,7 +243,12 @@
    "b-ml1-07",
    "b-ml1-08",
    "b-ml1-09",
-   "b-ml1-10"
+   "b-ml1-10",
+   "b-ml1-11",
+   "b-ml1-12",
+   "b-ml1-13",
+   "b-ml1-14",
+   "b-ml1-15"
   ]
  },
  {
@@ -263,13 +286,13 @@
    "q-ml-022",
    "q-ml-023",
    "q-ml-107",
-   "q-ml-108",
-   "q-ml-109",
-   "q-ml-110",
-   "q-ml-111"
+   "q-ml-108"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-ml-109",
+   "q-ml-110",
+   "q-ml-111",
    "qd-ml-03",
    "qd-ml-04",
    "qd-ml-05",
@@ -288,7 +311,12 @@
    "b-ml2-07",
    "b-ml2-08",
    "b-ml2-09",
-   "b-ml2-10"
+   "b-ml2-10",
+   "b-ml2-11",
+   "b-ml2-12",
+   "b-ml2-13",
+   "b-ml2-14",
+   "b-ml2-15"
   ]
  },
  {
@@ -325,14 +353,14 @@
    "q-ml-113",
    "q-ml-114",
    "q-ml-115",
-   "q-ml-116"
+   "q-ml-116",
+   "qd-ml-13"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
    "qd-ml-10",
    "qd-ml-11",
-   "qd-ml-12",
-   "qd-ml-13"
+   "qd-ml-12"
   ],
   "basicQuizIds": [
    "b-ml3-01",
@@ -344,7 +372,12 @@
    "b-ml3-07",
    "b-ml3-08",
    "b-ml3-09",
-   "b-ml3-10"
+   "b-ml3-10",
+   "b-ml3-11",
+   "b-ml3-12",
+   "b-ml3-13",
+   "b-ml3-14",
+   "b-ml3-15"
   ]
  },
  {
@@ -376,18 +409,18 @@
    "q-dlb-102",
    "q-dlb-103",
    "q-dlb-104",
-   "q-dlb-105"
+   "q-dlb-105",
+   "qd-dlb-15",
+   "qd-dlb-10",
+   "qd-dlb-12",
+   "qd-dlb-14",
+   "qd-dlb-11",
+   "qd-dlb-01"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
-   "qd-dlb-01",
    "qd-dlb-02",
-   "qd-dlb-10",
-   "qd-dlb-11",
-   "qd-dlb-12",
-   "qd-dlb-13",
-   "qd-dlb-14",
-   "qd-dlb-15"
+   "qd-dlb-13"
   ],
   "basicQuizIds": [
    "b-dlb1-01",
@@ -399,7 +432,12 @@
    "b-dlb1-07",
    "b-dlb1-08",
    "b-dlb1-09",
-   "b-dlb1-10"
+   "b-dlb1-10",
+   "b-dlb1-11",
+   "b-dlb1-12",
+   "b-dlb1-13",
+   "b-dlb1-14",
+   "b-dlb1-15"
   ]
  },
  {
@@ -437,11 +475,11 @@
    "q-dlb-106",
    "q-dlb-107",
    "q-dlb-108",
-   "q-dlb-109",
-   "q-dlb-110"
+   "q-dlb-109"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dlb-110",
    "qd-dlb-03",
    "qd-dlb-04",
    "qd-dlb-05",
@@ -457,7 +495,12 @@
    "b-dlb2-07",
    "b-dlb2-08",
    "b-dlb2-09",
-   "b-dlb2-10"
+   "b-dlb2-10",
+   "b-dlb2-11",
+   "b-dlb2-12",
+   "b-dlb2-13",
+   "b-dlb2-14",
+   "b-dlb2-15"
   ]
  },
  {
@@ -495,7 +538,10 @@
    "q-dlb-022",
    "q-dlb-023",
    "q-dlb-024",
-   "q-dlb-025",
+   "q-dlb-025"
+  ],
+  "challengeQuizIds": null,
+  "drillQuizIds": [
    "q-dlb-029",
    "q-dlb-030",
    "q-dlb-111",
@@ -503,10 +549,7 @@
    "q-dlb-113",
    "q-dlb-114",
    "q-dlb-115",
-   "q-dlb-116"
-  ],
-  "challengeQuizIds": null,
-  "drillQuizIds": [
+   "q-dlb-116",
    "qd-dlb-06",
    "qd-dlb-07",
    "qd-dlb-08",
@@ -522,7 +565,12 @@
    "b-dlb3-07",
    "b-dlb3-08",
    "b-dlb3-09",
-   "b-dlb3-10"
+   "b-dlb3-10",
+   "b-dlb3-11",
+   "b-dlb3-12",
+   "b-dlb3-13",
+   "b-dlb3-14",
+   "b-dlb3-15"
   ]
  },
  {
@@ -560,14 +608,14 @@
    "q-dlt-012",
    "q-dlt-031",
    "q-dlt-101",
-   "q-dlt-102",
-   "q-dlt-103",
-   "q-dlt-104",
-   "q-dlt-105",
-   "q-dlt-106"
+   "q-dlt-102"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dlt-103",
+   "q-dlt-104",
+   "q-dlt-105",
+   "q-dlt-106",
    "qd-dlt-01",
    "qd-dlt-02",
    "qd-dlt-03",
@@ -583,7 +631,12 @@
    "b-dlt1-07",
    "b-dlt1-08",
    "b-dlt1-09",
-   "b-dlt1-10"
+   "b-dlt1-10",
+   "b-dlt1-11",
+   "b-dlt1-12",
+   "b-dlt1-13",
+   "b-dlt1-14",
+   "b-dlt1-15"
   ]
  },
  {
@@ -618,13 +671,13 @@
    "q-dlt-108",
    "q-dlt-109",
    "q-dlt-110",
-   "q-dlt-111"
+   "q-dlt-111",
+   "qd-dlt-07",
+   "qd-dlt-06",
+   "qd-dlt-05"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
-   "qd-dlt-05",
-   "qd-dlt-06",
-   "qd-dlt-07",
    "qd-dlt-08",
    "qd-dlt-09",
    "qd-dlt-10"
@@ -639,7 +692,12 @@
    "b-dlt2-07",
    "b-dlt2-08",
    "b-dlt2-09",
-   "b-dlt2-10"
+   "b-dlt2-10",
+   "b-dlt2-11",
+   "b-dlt2-12",
+   "b-dlt2-13",
+   "b-dlt2-14",
+   "b-dlt2-15"
   ]
  },
  {
@@ -677,12 +735,12 @@
    "q-dlt-032",
    "q-dlt-112",
    "q-dlt-113",
-   "q-dlt-114",
-   "q-dlt-115",
-   "q-dlt-116"
+   "q-dlt-114"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dlt-115",
+   "q-dlt-116",
    "qd-dlt-11",
    "qd-dlt-12",
    "qd-dlt-13",
@@ -700,7 +758,12 @@
    "b-dlt3-07",
    "b-dlt3-08",
    "b-dlt3-09",
-   "b-dlt3-10"
+   "b-dlt3-10",
+   "b-dlt3-11",
+   "b-dlt3-12",
+   "b-dlt3-13",
+   "b-dlt3-14",
+   "b-dlt3-15"
   ]
  },
  {
@@ -738,13 +801,13 @@
    "q-dla-012",
    "q-dla-101",
    "q-dla-102",
-   "q-dla-103",
-   "q-dla-104",
-   "q-dla-105",
-   "q-dla-106"
+   "q-dla-103"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dla-104",
+   "q-dla-105",
+   "q-dla-106",
    "qd-dla-01",
    "qd-dla-02",
    "qd-dla-03",
@@ -762,7 +825,12 @@
    "b-dla1-07",
    "b-dla1-08",
    "b-dla1-09",
-   "b-dla1-10"
+   "b-dla1-10",
+   "b-dla1-11",
+   "b-dla1-12",
+   "b-dla1-13",
+   "b-dla1-14",
+   "b-dla1-15"
   ]
  },
  {
@@ -800,14 +868,14 @@
    "q-dla-024",
    "q-dla-025",
    "q-dla-107",
-   "q-dla-108",
-   "q-dla-109",
-   "q-dla-110",
-   "q-dla-111",
-   "q-dla-112"
+   "q-dla-108"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dla-109",
+   "q-dla-110",
+   "q-dla-111",
+   "q-dla-112",
    "qd-dla-07",
    "qd-dla-08",
    "qd-dla-09",
@@ -824,7 +892,12 @@
    "b-dla2-07",
    "b-dla2-08",
    "b-dla2-09",
-   "b-dla2-10"
+   "b-dla2-10",
+   "b-dla2-11",
+   "b-dla2-12",
+   "b-dla2-13",
+   "b-dla2-14",
+   "b-dla2-15"
   ]
  },
  {
@@ -862,12 +935,12 @@
    "q-dla-113",
    "q-dla-114",
    "q-dla-115",
-   "q-dla-116",
-   "q-dla-117",
-   "q-dla-118"
+   "q-dla-116"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
+   "q-dla-117",
+   "q-dla-118",
    "qd-dla-12",
    "qd-dla-13",
    "qd-dla-14",
@@ -886,7 +959,12 @@
    "b-dla3-07",
    "b-dla3-08",
    "b-dla3-09",
-   "b-dla3-10"
+   "b-dla3-10",
+   "b-dla3-11",
+   "b-dla3-12",
+   "b-dla3-13",
+   "b-dla3-14",
+   "b-dla3-15"
   ]
  },
  {
@@ -918,15 +996,16 @@
    "q-imp-101",
    "q-imp-102",
    "q-imp-103",
-   "q-imp-104"
+   "q-imp-104",
+   "qd-imp-07",
+   "qd-imp-01",
+   "qd-imp-08",
+   "qd-imp-02",
+   "qc-imp1-01",
+   "qc-imp1-02"
   ],
   "challengeQuizIds": null,
-  "drillQuizIds": [
-   "qd-imp-01",
-   "qd-imp-02",
-   "qd-imp-07",
-   "qd-imp-08"
-  ],
+  "drillQuizIds": [],
   "basicQuizIds": [
    "b-imp1-01",
    "b-imp1-02",
@@ -937,7 +1016,12 @@
    "b-imp1-07",
    "b-imp1-08",
    "b-imp1-09",
-   "b-imp1-10"
+   "b-imp1-10",
+   "b-imp1-11",
+   "b-imp1-12",
+   "b-imp1-13",
+   "b-imp1-14",
+   "b-imp1-15"
   ]
  },
  {
@@ -969,15 +1053,16 @@
    "q-imp-105",
    "q-imp-106",
    "q-imp-107",
-   "q-imp-108"
+   "q-imp-108",
+   "qd-imp-04",
+   "qd-imp-06",
+   "qd-imp-05",
+   "qd-imp-03",
+   "qc-imp2-01",
+   "qc-imp2-02"
   ],
   "challengeQuizIds": null,
-  "drillQuizIds": [
-   "qd-imp-03",
-   "qd-imp-04",
-   "qd-imp-05",
-   "qd-imp-06"
-  ],
+  "drillQuizIds": [],
   "basicQuizIds": [
    "b-imp2-01",
    "b-imp2-02",
@@ -988,7 +1073,12 @@
    "b-imp2-07",
    "b-imp2-08",
    "b-imp2-09",
-   "b-imp2-10"
+   "b-imp2-10",
+   "b-imp2-11",
+   "b-imp2-12",
+   "b-imp2-13",
+   "b-imp2-14",
+   "b-imp2-15"
   ]
  },
  {
@@ -1025,11 +1115,11 @@
    "q-imp-109",
    "q-imp-110",
    "q-imp-111",
-   "q-imp-112"
+   "q-imp-112",
+   "qd-imp-09"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
-   "qd-imp-09",
    "qd-imp-10"
   ],
   "basicQuizIds": [
@@ -1042,7 +1132,12 @@
    "b-imp3-07",
    "b-imp3-08",
    "b-imp3-09",
-   "b-imp3-10"
+   "b-imp3-10",
+   "b-imp3-11",
+   "b-imp3-12",
+   "b-imp3-13",
+   "b-imp3-14",
+   "b-imp3-15"
   ]
  },
  {
@@ -1080,7 +1175,10 @@
    "q-law-012",
    "q-law-013",
    "q-law-014",
-   "q-law-015",
+   "q-law-015"
+  ],
+  "challengeQuizIds": null,
+  "drillQuizIds": [
    "q-law-016",
    "q-law-017",
    "q-law-101",
@@ -1088,10 +1186,7 @@
    "q-law-103",
    "q-law-104",
    "q-law-105",
-   "q-law-106"
-  ],
-  "challengeQuizIds": null,
-  "drillQuizIds": [
+   "q-law-106",
    "qd-law-01",
    "qd-law-02",
    "qd-law-07",
@@ -1107,7 +1202,12 @@
    "b-law1-07",
    "b-law1-08",
    "b-law1-09",
-   "b-law1-10"
+   "b-law1-10",
+   "b-law1-11",
+   "b-law1-12",
+   "b-law1-13",
+   "b-law1-14",
+   "b-law1-15"
   ]
  },
  {
@@ -1142,16 +1242,16 @@
    "q-law-109",
    "q-law-110",
    "q-law-111",
-   "q-law-112"
+   "q-law-112",
+   "qd-law-08",
+   "qd-law-09",
+   "qd-law-03"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
-   "qd-law-03",
    "qd-law-04",
    "qd-law-05",
-   "qd-law-06",
-   "qd-law-08",
-   "qd-law-09"
+   "qd-law-06"
   ],
   "basicQuizIds": [
    "b-law2-01",
@@ -1163,7 +1263,12 @@
    "b-law2-07",
    "b-law2-08",
    "b-law2-09",
-   "b-law2-10"
+   "b-law2-10",
+   "b-law2-11",
+   "b-law2-12",
+   "b-law2-13",
+   "b-law2-14",
+   "b-law2-15"
   ]
  },
  {
@@ -1199,14 +1304,14 @@
    "q-law-115",
    "q-law-116",
    "q-law-117",
-   "q-law-118"
+   "q-law-118",
+   "qd-law-10",
+   "qd-law-13"
   ],
   "challengeQuizIds": null,
   "drillQuizIds": [
-   "qd-law-10",
    "qd-law-11",
    "qd-law-12",
-   "qd-law-13",
    "qd-law-14",
    "qd-law-16"
   ],
@@ -1220,7 +1325,12 @@
    "b-law3-07",
    "b-law3-08",
    "b-law3-09",
-   "b-law3-10"
+   "b-law3-10",
+   "b-law3-11",
+   "b-law3-12",
+   "b-law3-13",
+   "b-law3-14",
+   "b-law3-15"
   ]
  }
 ]

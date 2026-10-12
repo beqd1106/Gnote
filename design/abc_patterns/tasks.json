@@ -1,0 +1,286 @@
+[
+ {
+  "lesson": "l-hist1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-hist1-11",
+   "b-hist1-12",
+   "b-hist1-13",
+   "b-hist1-14",
+   "b-hist1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-hist2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-hist2-11",
+   "b-hist2-12",
+   "b-hist2-13",
+   "b-hist2-14",
+   "b-hist2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-hist3",
+  "basic": 5,
+  "confirm": 4,
+  "basic_ids": [
+   "b-hist3-11",
+   "b-hist3-12",
+   "b-hist3-13",
+   "b-hist3-14",
+   "b-hist3-15"
+  ],
+  "confirm_ids": [
+   "qc-hist3-01",
+   "qc-hist3-02",
+   "qc-hist3-03",
+   "qc-hist3-04"
+  ]
+ },
+ {
+  "lesson": "l-ml1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-ml1-11",
+   "b-ml1-12",
+   "b-ml1-13",
+   "b-ml1-14",
+   "b-ml1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-ml2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-ml2-11",
+   "b-ml2-12",
+   "b-ml2-13",
+   "b-ml2-14",
+   "b-ml2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-ml3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-ml3-11",
+   "b-ml3-12",
+   "b-ml3-13",
+   "b-ml3-14",
+   "b-ml3-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlb1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlb1-11",
+   "b-dlb1-12",
+   "b-dlb1-13",
+   "b-dlb1-14",
+   "b-dlb1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlb2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlb2-11",
+   "b-dlb2-12",
+   "b-dlb2-13",
+   "b-dlb2-14",
+   "b-dlb2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlb3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlb3-11",
+   "b-dlb3-12",
+   "b-dlb3-13",
+   "b-dlb3-14",
+   "b-dlb3-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlt1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlt1-11",
+   "b-dlt1-12",
+   "b-dlt1-13",
+   "b-dlt1-14",
+   "b-dlt1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlt2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlt2-11",
+   "b-dlt2-12",
+   "b-dlt2-13",
+   "b-dlt2-14",
+   "b-dlt2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dlt3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dlt3-11",
+   "b-dlt3-12",
+   "b-dlt3-13",
+   "b-dlt3-14",
+   "b-dlt3-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dla1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dla1-11",
+   "b-dla1-12",
+   "b-dla1-13",
+   "b-dla1-14",
+   "b-dla1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dla2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dla2-11",
+   "b-dla2-12",
+   "b-dla2-13",
+   "b-dla2-14",
+   "b-dla2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-dla3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-dla3-11",
+   "b-dla3-12",
+   "b-dla3-13",
+   "b-dla3-14",
+   "b-dla3-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-imp1",
+  "basic": 5,
+  "confirm": 2,
+  "basic_ids": [
+   "b-imp1-11",
+   "b-imp1-12",
+   "b-imp1-13",
+   "b-imp1-14",
+   "b-imp1-15"
+  ],
+  "confirm_ids": [
+   "qc-imp1-01",
+   "qc-imp1-02"
+  ]
+ },
+ {
+  "lesson": "l-imp2",
+  "basic": 5,
+  "confirm": 2,
+  "basic_ids": [
+   "b-imp2-11",
+   "b-imp2-12",
+   "b-imp2-13",
+   "b-imp2-14",
+   "b-imp2-15"
+  ],
+  "confirm_ids": [
+   "qc-imp2-01",
+   "qc-imp2-02"
+  ]
+ },
+ {
+  "lesson": "l-imp3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-imp3-11",
+   "b-imp3-12",
+   "b-imp3-13",
+   "b-imp3-14",
+   "b-imp3-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-law1",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-law1-11",
+   "b-law1-12",
+   "b-law1-13",
+   "b-law1-14",
+   "b-law1-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-law2",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-law2-11",
+   "b-law2-12",
+   "b-law2-13",
+   "b-law2-14",
+   "b-law2-15"
+  ],
+  "confirm_ids": []
+ },
+ {
+  "lesson": "l-law3",
+  "basic": 5,
+  "confirm": 0,
+  "basic_ids": [
+   "b-law3-11",
+   "b-law3-12",
+   "b-law3-13",
+   "b-law3-14",
+   "b-law3-15"
+  ],
+  "confirm_ids": []
+ }
+]
